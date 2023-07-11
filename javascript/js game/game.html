@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Guessing Game</title>
+    <style>
+        #wordContainer {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        #messageContainer {
+            margin-bottom: 10px;
+        }
+        
+        #incorrectGuessesContainer {
+            margin-bottom: 10px;
+        }
+        
+        #previousGuessesTable {
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        
+        #previousGuessesTable th,
+        #previousGuessesTable td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        
+        #imageContainer {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        #imageContainer img {
+            max-width: 400px;
+            max-height: 400px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Word Guessing Game</h1>
+    <div id="wordContainer"></div>
+    <div id="messageContainer"></div>
+    <input type="text" id="guessInput" placeholder="Enter a letter">
+    <button id="guessButton">Guess</button>
+    <table id="previousGuessesTable">
+        <thead>
+            <tr>
+                <th>Guesses</th>
+            </tr>
+        </thead>
+        <tbody id="previousGuessesTableBody"></tbody>
+    </table>
+    <div id="imageContainer">
+        <img src="trump.jpg" id="image1">
+        <img src="racist.jpg" id="image2">
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
+
